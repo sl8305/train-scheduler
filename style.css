@@ -1,0 +1,24 @@
+body {
+    background: lightgrey;
+}
+
+#employee-table th,
+    td {
+      display: inline-block;
+      width: 16.575%;
+    }
+
+.jumbotron, .card-header {
+        background-color: lightseagreen;
+        border: 2px solid lightseagreen;
+    }
+
+.card-body {
+    border: 3px solid lightseagreen;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+h1, h3, .card-header {
+    color: white;
+}
