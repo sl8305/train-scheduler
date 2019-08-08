@@ -2,10 +2,10 @@ body {
     background: lightgrey;
 }
 
-#employee-table th,
+#train-table th,
     td {
       display: inline-block;
-      width: 16.575%;
+      width: 20%;
     }
 
 .jumbotron, .card-header {
@@ -22,3 +22,4 @@ body {
 h1, h3, .card-header {
     color: white;
 }
+

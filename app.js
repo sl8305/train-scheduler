@@ -61,12 +61,9 @@ var firebaseConfig = {
     var fireT = childSnapshot.val().start;
     var fireF = childSnapshot.val().frequency;
   
-  
-    calculateTime(fireT, fireF);
-    
-
-
-
+    // calculates the time untill the next train 
+    var next = calculateTime(fireT, fireF);
+    var nArrival = moment().add(next, "minutes");
 
     // Create the new row
     var newRow = $("<tr>").append(
@@ -75,11 +72,11 @@ var firebaseConfig = {
       // Adds Destination
       $("<td>").text(fireD),
       // Adds Frequency
-      $("<td>").text(fireF),
+      $("<td style='text-align: center'>").text(fireF),
       // Adds Next Arrival
-      $("<td>").text(fireT),
+      $("<td style='text-align: center'>").text(nArrival),
       // Adds Minutes Away
-      $("<td>").text(calculateTime(fireT, fireF))
+      $("<td style='text-align: center'>").text(next)
     );
   
     // Append the new row to the table
@@ -97,7 +94,7 @@ function calculateTime (timeFirst, timeFreq) {
   var tFreq = timeFreq;
   var firstTime = timeFirst;
 
-  var firstTimeConverted = moment(firstTime, "HH:mm")
+  var firstTimeConverted = moment(firstTime, "hh:mm")
   console.log("FIRST TIME CONVERTED: " + firstTimeConverted);
 
 // Current Time
