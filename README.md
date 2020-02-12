@@ -16,3 +16,10 @@ Layout:
         c) First Train Time
         d) Frequency in Minutes
         e) Submit button
+
+### Technology Used:
+* Firebase
+* JavaScript
+* jQuery
+* HTML
+* CSS
