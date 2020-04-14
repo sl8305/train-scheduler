@@ -1,5 +1,5 @@
 body {
-    background: lightgrey;
+    background: #043354;
 }
 
 #train-table th,
@@ -8,15 +8,24 @@ body {
       width: 20%;
     }
 
-.jumbotron, .card-header {
-        background-color: lightseagreen;
-        border: 2px solid lightseagreen;
+.headerColor {
+    background-color: #c73906;
     }
 
-.card-body {
-    border: 3px solid lightseagreen;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+.jumbotron{
+    border-radius: 15px;
+    border: 3px solid black;
+}
+
+
+#scheduleTitle, #addTittle {   
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card{
+    border: 3px solid black;
+    border-radius: 20px;
 }
 
 h1, h3, .card-header {
